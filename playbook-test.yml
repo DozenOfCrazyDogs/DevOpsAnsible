@@ -1,0 +1,10 @@
+---
+#######################
+##   TEST PLAYBOOK   ##
+#######################
+
+- name: Testing simple role
+  hosts: jboss-dev
+  become: yes
+  roles:
+    - testing_ansible

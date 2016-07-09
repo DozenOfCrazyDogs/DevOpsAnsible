@@ -1,0 +1,8 @@
+---
+- name: Update yum
+  yum: name=* state=latest
+
+- name: Generate test template
+  template:
+    src: test_template.j2
+    dest: /tmp/test_file
